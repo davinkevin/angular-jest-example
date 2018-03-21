@@ -6,16 +6,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "jest --runInBand",
+    "test": "jest --runInBand --config ./jest-preset.json",
     "lint": "ng lint",
     "e2e": "ng e2e"
-  },
-  "jest": {
-    "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setup-jest.ts",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@ngrx|ng2-truncate)"
-    ]
   },
   "private": true,
   "dependencies": {
